@@ -115,6 +115,15 @@ So instead of creating a `<Widget>` React element that spits out a bunch of nest
 
 By the way, yes, you can mix HTML3000 and React, nothing wrong about it! But we're talking about Rails here, and I've got good news.
 
+## Example
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="JoYLqoP" data-pen-title="WIP HTML 3000 Fixing horrible Tailwind example" data-user="fzero" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/fzero/pen/JoYLqoP">
+  WIP HTML 3000 Fixing horrible Tailwind example</a> by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+
 ## On a Rails/ERB context
 
 HTML3000 works great with ERB, Hotwire and Stimulus since we're not really doing anything special – it's just HTML after all. In
