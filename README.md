@@ -1,11 +1,21 @@
 # html3000
 No `<div>`s, no `<span>`s, no classes, no problem
 
-## Semantic = saying what you mean
+## HTML and semantics
 
-Semantic HTML is a great start and does a good job describing the _document_ parts of a page.
+The web was initially just text, so it made sense to build a language to describe documents.
+
+That's why elements such as `<article>`, `<aside>`, `<header>`, `<footer>`, `<p>` etc. exist: they literally describe what they do.
+
+In other words, they're *semantic*.
+
+> Semantic = saying what you mean
+
+Things evolved pretty quickly though and now we have millions of web applications using HTML to describe the UI.
 
 BUT! Everything that's not document-shaped - e.g. panels, alerts cards, carousels, badges, counters, avatars - is represented by non-semantic catch-all elements like `<div>` and `<span>`.
+
+## What is a `<div>` anyway?
 
 I can tell you what `<main>`, `<article>`, `<nav>`, `<header>` and `<footer>` mean, but what about `<div>`? What does `<div>` mean?
 
@@ -27,7 +37,7 @@ Nobody knows CSS anymore and most beginner devs don't even know proper HTML. Thi
 
 ## Back to it
 
-HTML and CSS is awesome in 2025 and there are a few overlooked features that can completely change how front-end is coded.
+HTML and CSS are awesome in 2025 and there are a few overlooked features that can completely change how front-end is coded.
 
 I've put together a set of practices and ideas to put those features to good use. It feels like the future even though every single technique works in all browsers – most of features have been around for decades!
 
@@ -47,10 +57,6 @@ I call it **HTML3000**.
 
 ### Use custom HTML tags extensively
 
-> NOTE: let’s use the example from Tailwind’s home here instead, the one with the album cover. It’s a perfect example of an element that **is** something (a “now playing” component) that’s completely unintelligible unless you’re looking at it while you edit.
-
-> NOTE 2: **Do poke fun at the code snippets that can’t be copy/pasted properly on their fucking page**
-
 ```html
 <div class="card card--rounded card--dropshadow">
   <h3 class="card-title">
@@ -61,6 +67,7 @@ I call it **HTML3000**.
   </p>
 </div>
 ```
+
 ```html
 <card rounded dropshadow>
   <h3>
@@ -73,6 +80,7 @@ I call it **HTML3000**.
 ```
 
 ### Context and nesting > tons of classes
+
 ```css
 card {
   + [rounded] {
@@ -116,13 +124,8 @@ fact `<turbo-frame>` is itself web component using a custom tag.
 
 HTML3000 is not about web components, but there's definitely a philosophical overlap.
 
----
+## References
 
-https://DaisyUI.com -> anti-example of a tool attempting to simplify Tailwind
-
-On a similar vein:
-https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters/
-
-My god, Tailwind is fucking terrible.
-
-PicoCSS is a great start for a H3K CSS library: https://picocss.com
+- [CSS classes considered harmful](https://www.keithcirkel.co.uk/css-classes-considered-harmful/)
+- [Why semantic HTML still matters](https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters/)
+- [PicoCSS](https://picocss.com)
