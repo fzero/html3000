@@ -1,0 +1,11 @@
+@media (min-width: 1536px) {
+  body > main {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  body > main {
+    max-width: 60%;
+  }
+}
