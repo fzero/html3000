@@ -9,8 +9,214 @@
     <title>Hello world!</title>
   </head>
   <body>
-    <main>
-      <h1>Hello world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <main id="content">
+      <h1>HTML3000: A Better Way to Write HTML for Modern Apps</h1>
+
+      <p>
+        For decades, web developers have been taught to think of HTML as a
+        document language. When Tim Berners-Lee invented HTML, every tag meant
+        something. A heading was a heading. A paragraph was a paragraph. The
+        markup itself told you what the content was, and browsers knew how to
+        treat it. That’s what <em>semantic HTML</em> means.
+      </p>
+
+      <p>
+        But the web has changed. Today, the majority of what we build are
+        applications, not documents. And the metaphors of documents don’t always
+        fit application interfaces. Carousels, badges, counters, avatars,
+        alerts–none of these map neatly to <code>&lt;article&gt;</code>,
+        <code>&lt;header&gt;</code>, or <code>&lt;p&gt;</code>. Instead, we’ve
+        been shoehorning them into non-semantic catch-alls:
+        <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>.
+      </p>
+
+      <p>
+        It’s time to say it: <code>&lt;div&gt;</code> and
+        <code>&lt;span&gt;</code> are crutches. They’re lazy. They don’t mean
+        anything. And the fact that our modern front-ends are built almost
+        entirely out of them is… embarrassing.
+      </p>
+
+      <h2>Why <code>&lt;div&gt;</code>s Are Harmful</h2>
+
+      <p>
+        <code>&lt;div&gt;</code>s are the duct tape of web development. They:
+      </p>
+
+      <ul>
+        <li>Hide the true structure of the UI.</li>
+        <li>Depend on fragile, bloated class names for meaning.</li>
+        <li>
+          Make code unreadable – it takes mental effort to decode what a
+          Tailwind block is actually doing.
+        </li>
+        <li>
+          Encourage short-term hacks instead of long-term maintainable patterns.
+        </li>
+      </ul>
+
+      <p>
+        The irony is that React developers already know this. They write
+        <code>&lt;Panel&gt;</code>, <code>&lt;Button&gt;</code>,
+        <code>&lt;Logo&gt;</code>, <code>&lt;Nav&gt;</code> every day in JSX.
+        Those are semantic! But paradoxically, the same community often declares
+        that semantic HTML is “dead.” I’d argue it isn’t. In fact, semantic HTML
+        is more important than ever.
+      </p>
+
+      <h2>HTML in 2025: Underused and Undervalued</h2>
+
+      <p>
+        The truth is, HTML and CSS in 2025 are more powerful than many
+        developers realize. Features like CSS nesting, attribute selectors, and
+        custom elements give us expressive, declarative tools that work
+        everywhere–without JavaScript or build systems. Put together, these
+        practices feel futuristic, even though most of them have been around for
+        years.
+      </p>
+
+      <p>That’s why I call this approach <strong>HTML3000</strong>.</p>
+
+      <h2>The Principles of HTML3000</h2>
+
+      <p>
+        At its core, HTML3000 is about leaning into semantics and writing HTML
+        that describes <em>what</em> an element is, not just <em>how</em> it
+        looks. The key principles are:
+      </p>
+
+      <ul>
+        <li>
+          <p>
+            <strong>Use custom HTML tags extensively.</strong> No
+            <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>. If you feel
+            you need these tags, take a step back and figure out what you
+            actually mean.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Favor context and nesting over class soup.</strong> Remember
+            what the “C” in CSS stands for.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Use attributes instead of classes as CSS hooks.</strong>
+            Double down on declarative patterns.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>Start with simple reusable patterns.</strong> Reach for Web
+            Components only when necessary.
+          </p>
+        </li>
+        <li>
+          <p>
+            <strong>JavaScript comes last.</strong> Focus on structure and
+            styling before behavior.
+          </p>
+        </li>
+      </ul>
+
+      <p>
+        The goal isn’t to throw out modern tooling. HTML3000 plays nicely with
+        ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more.
+        It’s “just HTML” but written differently.
+      </p>
+
+      <h2>What You Gain Without <code>&lt;div&gt;</code>s</h2>
+
+      <ul>
+        <li>
+          <strong>Readable code</strong> – you know what’s on the page without
+          tracing through CSS classes.
+        </li>
+        <li>
+          <strong>Maintainability</strong> – meaningful tags are easier to
+          refactor and extend.
+        </li>
+        <li>
+          <strong>Consistency</strong> – you naturally create component patterns
+          instead of ad hoc markup.
+        </li>
+        <li>
+          <strong>Freedom from bloat</strong> – less dependence on utility
+          libraries to patch over missing semantics.
+        </li>
+      </ul>
+
+      <h2>Why This Matters</h2>
+
+      <p>
+        Using semantic, declarative markup makes code easier to read, reason
+        about, and maintain. Instead of wading through endless utility classes,
+        you see the actual structure of your UI. Consistency emerges naturally,
+        and you’re nudged toward building standardized, reusable components.
+      </p>
+
+      <p>
+        Is this a design system? Nope! But any serious application needs
+        consistent UX, and HTML3000 encourages you to think in components from
+        the start.
+      </p>
+
+      <h2>Adopting HTML3000 Incrementally</h2>
+
+      <p>
+        You don’t need to rewrite everything overnight. Even small steps–like
+        replacing anonymous <code>&lt;div&gt;</code>s with meaningful custom
+        tags–can dramatically improve readability. You can go further by
+        experimenting with attribute selectors or phasing out class-heavy
+        patterns where they don’t serve you.
+      </p>
+
+      <h2>Further Reading</h2>
+
+      <p>If this resonates, I recommend checking out:</p>
+
+      <ul>
+        <li>
+          <a href="https://www.keithcirkel.co.uk/css-classes-considered-harmful"
+            >CSS Classes Considered Harmful</a
+          >
+          – the article that sparked much of this thinking.
+        </li>
+        <li>
+          <a
+            href="https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters"
+            >Why Semantic HTML Still Matters</a
+          >
+          – a reminder of the foundations we’ve drifted from.
+        </li>
+        <li>
+          <a href="https://picocss.com/">PicoCSS</a> – a CSS framework that
+          embraces semantic, class-less markup.
+        </li>
+      </ul>
+
+      <h2>Looking Ahead</h2>
+
+      <p>
+        HTML3000 isn’t a framework, library, or package you install. It’s a set
+        of practices that rediscover the expressive power of HTML and CSS–tools
+        that already run everywhere. It’s about writing code for the web that’s
+        semantic, declarative, and future-proof.
+      </p>
+
+      <p>
+        If the early web was about documents, and the last decade was about
+        JavaScript-driven UIs, perhaps the next step is recognizing that the
+        simplest building blocks–HTML and CSS–already take us surprisingly far.
+      </p>
+
+      <p>
+        HTML3000 isn’t just a practice. It’s a promise:
+        <strong>no more meaningless markup.</strong> Because the future of the
+        web shouldn’t be meaningless.
+      </p>
     </main>
   </body>
 </html>
