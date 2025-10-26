@@ -39,40 +39,6 @@ At its core, HTML3000 is about leaning into semantics and writing HTML that desc
 
 The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more. It’s “just HTML” but written differently.
 
-## Example
-
-<p
-  class="codepen"
-  data-height="400"
-  data-default-tab="html,result"
-  data-slug-hash="JoYLqoP"
-  data-pen-title="HTML3000: Fixing the Now Playing Tailwind example"
-  data-user="fzero"
-  style="
-    height: 400px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid;
-    margin: 1em 0;
-    padding: 1em;
-  "
->
-  <span
-    >See the Pen
-    <a href="https://codepen.io/fzero/pen/JoYLqoP">
-      HTML3000: Fixing the Now Playing Tailwind example</a
-    >
-    by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>) on
-    <a href="https://codepen.io">CodePen</a>.</span
-  >
-</p>
-<script
-  async
-  src="https://public.codepenassets.com/embed/index.js"
-></script>
-
 ## What You Gain Without `<div>`s
 
 - **Readable code** – you know what’s on the page without tracing through CSS classes.
