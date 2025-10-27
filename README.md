@@ -23,7 +23,7 @@ The truth is, HTML and CSS in 2025 are more powerful than many developers realiz
 
 That’s why I call this approach **HTML3000**.
 
-## The Principles of HTML3000
+## The Principles
 
 At its core, HTML3000 is about leaning into semantics and writing HTML that describes _what_ an element is, not just _how_ it looks. The key principles are:
 
