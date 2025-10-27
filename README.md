@@ -19,7 +19,7 @@ The irony is that React developers already know this. They write `<Panel>`, `<Bu
 
 ## HTML in 2025: Underused and Undervalued
 
-The truth is, HTML and CSS in 2025 are more powerful than many developers realize. Features like CSS nesting, attribute selectors, and custom elements give us expressive, declarative tools that work everywhere–without JavaScript or build systems. Put together, these practices feel futuristic, even though most of them have been around for years.
+The truth is, HTML and CSS in 2025 are more powerful than many developers realize. Features like CSS nesting, attribute selectors, and custom elements give us expressive, declarative tools that work everywhere–without JavaScript or build systems. Put together, these practices feel futuristic – like coding in the year 3000! – even though most of them have been around for years.
 
 That’s why I call this approach **HTML3000**.
 
