@@ -39,6 +39,20 @@ At its core, HTML3000 is about leaning into semantics and writing HTML that desc
 
 The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more. It’s “just HTML” but written differently.
 
+## A quick note on custom HTML tags
+
+There's quite a bit of confusion about this feature. The TL;DR is **the only thing you need to do to use a custom HTML tag is add it to your HTML**.
+
+In other words, you can go ahead and type `<my-tag>` on your code and it will behave like a `<span>`.
+
+Yes, that's all. This has been the case since HTML5 was released in January of 2008.
+
+I believe the confusion began when [web components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) became a thing. The communication around web components was never very good to begin with, so this is no surprise.
+
+Rest assured these are two separate features: custom HTML tags don't need any Javascript to work. You can simply add them to your code and apply CSS defitions as you would for any other HTML tag.
+
+That's how we're getting rid of `<span>` and `<div>` in favour of fully semantic tags to describe applications UIs.
+
 ## What You Gain Without `<div>`s
 
 - **Readable code** – you know what’s on the page without tracing through CSS classes.
