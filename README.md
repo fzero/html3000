@@ -33,7 +33,7 @@ At its core, HTML3000 is about leaning into semantics and writing HTML that desc
 
 - **Use attributes instead of classes as CSS hooks.** Double down on declarative patterns.
 
-- **Start with simple reusable patterns.** Reach for Web Components only when necessary.
+- **Start with reusable patterns** and componentize later.
 
 - **JavaScript comes last.** Focus on structure and styling before behavior.
 
