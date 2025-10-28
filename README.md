@@ -81,7 +81,7 @@ If this resonates, I recommend checking out:
 
 ## Looking Ahead
 
-HTML3000 isn’t a framework, library, or package you install. It’s a set of practices that rediscover the expressive power of HTML and CSS–tools that already run everywhere. It’s about writing code for the web that’s semantic, declarative, and future-proof.
+HTML3000 isn’t a framework, library, or package you install. It’s a set of practices that rediscover the expressive power of HTML and CSS – tools that already run everywhere. It’s about writing code for the web that’s semantic, declarative, and future-proof.
 
 If the early web was about documents, and the last decade was about JavaScript-driven UIs, perhaps the next step is recognizing that the simplest building blocks–HTML and CSS–already take us surprisingly far.
 
