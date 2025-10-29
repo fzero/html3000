@@ -83,21 +83,23 @@
       <h1>A Better Way to Write HTML for Modern Apps</h1>
 
       <p>
-        For decades, web developers have been taught to think of HTML as a
-        document language. When Tim Berners-Lee invented HTML, every tag meant
-        something. A heading was a heading. A paragraph was a paragraph. The
-        markup itself told you what the content was, and browsers knew how to
-        treat it. That’s what <em>semantic HTML</em> means.
+        When Tim Berners-Lee invented HTML his idea was to share documents –
+        scientific papers to be precise. This document shape is still with us
+        after all this time. That's why we have elements like
+        <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>,
+        <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+        <code>&lt;p&gt;</code> and so on.
       </p>
 
       <p>
-        But the web has changed. Today, the majority of what we build are
-        applications, not documents. And the metaphors of documents don’t always
-        fit application interfaces. Carousels, badges, counters, avatars, alerts
-        – none of these map neatly to <code>&lt;article&gt;</code>,
-        <code>&lt;header&gt;</code>, or <code>&lt;p&gt;</code>. Instead, we’ve
-        been shoehorning them into non-semantic catch-alls:
-        <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code>.
+        This works great for blogs and news articles, but the web has changed.
+        Today, the majority of what we build are applications, not documents,
+        and the metaphors of documents don’t always fit application interfaces.
+        Carousels, badges, counters, avatars, alerts – none of these map neatly
+        to <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>, or
+        <code>&lt;p&gt;</code>. Instead, we’ve been shoehorning them into
+        non-semantic catch-alls: <code>&lt;div&gt;</code> and
+        <code>&lt;span&gt;</code>.
       </p>
 
       <p>
@@ -140,7 +142,7 @@
         The truth is, HTML and CSS in 2025 are more powerful than many
         developers realize. Features like CSS nesting, attribute selectors, and
         custom elements give us expressive, declarative tools that work
-        everywhere – without JavaScript or build systems. Put together, these
+        everywhere without JavaScript or build systems. Put together, these
         practices feel futuristic – like coding in the year 3000! – even though
         most of them have been around for years.
       </p>
@@ -196,47 +198,50 @@
         It’s "just HTML" but written differently.
       </p>
 
-      <h2>A quick note on custom HTML tags</h2>
+      <aside>
+        <h2>A note on custom HTML tags</h2>
 
-      <p>
-        There's quite a bit of confusion about this feature. The TL;DR is
-        <strong>
-          all you need to use a custom HTML tag is add it to your HTML.
-        </strong>
-      </p>
+        <p>
+          There's quite a bit of confusion about this feature. The TL;DR is
+          <strong>
+            all you need to use a custom HTML tag is add it to your HTML.
+          </strong>
+        </p>
 
-      <p>
-        In other words, you can go ahead and type <code>&lt;my-tag&gt;</code> on
-        your code and it will behave like a <code>&lt;span&gt;</code>.
-      </p>
+        <p>
+          In other words, you can go ahead and type
+          <code>&lt;my-tag&gt;</code> on your code and it will behave like a
+          <code>&lt;span&gt;</code>.
+        </p>
 
-      <p>
-        Yes, that's all. This has been the case since HTML5 was released in
-        January of 2008.
-      </p>
+        <p>
+          Yes, that's all. This has been the case since HTML5 was released in
+          January of 2008.
+        </p>
 
-      <p>
-        I believe the confusion began when
-        <a
-          href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
-        >
-          web components
-        </a>
-        became a thing. The communication around them was never very clear to
-        begin with, so this is no surprise.
-      </p>
+        <p>
+          I believe the confusion began when
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
+          >
+            web components
+          </a>
+          became a thing. The communication around them was never very clear to
+          begin with, so this is no surprise.
+        </p>
 
-      <p>
-        Rest assured these are two separate features: custom HTML tags don't
-        need any Javascript to work. You can simply add them to your code and
-        apply CSS defitions as you would for any other HTML tag.
-      </p>
+        <p>
+          Rest assured these are two separate features: custom HTML tags don't
+          need any Javascript to work. You can simply add them to your code and
+          apply CSS defitions as you would for any other HTML tag.
+        </p>
 
-      <p>
-        That's how we're getting rid of <code>&lt;span&gt;</code> and
-        <code>&lt;div&gt;</code> in favour of fully semantic tags to describe
-        applications UIs.
-      </p>
+        <p>
+          That's how we're getting rid of <code>&lt;span&gt;</code> and
+          <code>&lt;div&gt;</code> in favour of fully semantic tags to describe
+          applications UIs.
+        </p>
+      </aside>
 
       <h2>Examples</h2>
 
@@ -392,7 +397,8 @@
       <p>
         If the early web was about documents, and the last decade was about
         JavaScript-driven UIs, perhaps the next step is recognizing that the
-        simplest building blocks–HTML and CSS–already take us surprisingly far.
+        simplest building blocks – HTML and CSS – already take us surprisingly
+        far.
       </p>
 
       <p>
@@ -402,12 +408,10 @@
       </p>
 
       <copyright>
-        <p>
-          <small>
-            HTML3000 &copy; 2025 by
-            <a href="https://fabioneves.ca" target="_blank"> Fabio Neves </a>
-          </small>
-        </p>
+        <small>
+          HTML3000 &copy; 2025 by
+          <a href="https://fabioneves.ca" target="_blank"> Fabio Neves </a>
+        </small>
       </copyright>
 
       <tagline> Proudly Canadian – Antifascist to the core </tagline>

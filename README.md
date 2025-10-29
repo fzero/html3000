@@ -1,8 +1,8 @@
 # HTML3000: A Better Way to Write HTML for Modern Apps
 
-For decades, web developers have been taught to think of HTML as a document language. When Tim Berners-Lee invented HTML, every tag meant something. A heading was a heading. A paragraph was a paragraph. The markup itself told you what the content was, and browsers knew how to treat it. That’s what _semantic HTML_ means.
+When Tim Berners-Lee invented HTML his idea was to share documents – scientific papers to be precise. This document shape is still with us after all this time. That's why we have elements like `<article>`, `<aside>`, `<header>`, `<footer>`, `<p>` and so on.
 
-But the web has changed. Today, the majority of what we build are applications, not documents. And the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts–none of these map neatly to `<article>`, `<header>`, or `<p>`. Instead, we’ve been shoehorning them into non-semantic catch-alls: `<div>` and `<span>`.
+This works great for blogs, news articles, but the web has changed. Today, the majority of what we build are applications, not documents, and the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts – none of these map neatly to `<article>`, `<header>`, or `<p>`. Instead, we’ve been shoehorning them into non-semantic catch-alls: `<div>` and `<span>`.
 
 It’s time to say it: `<div>` and `<span>` are crutches. They’re lazy. They don’t mean anything. And the fact that our modern front-ends are built almost entirely out of them is… embarrassing.
 
@@ -19,7 +19,7 @@ The irony is that React developers already know this. They write `<Panel>`, `<Bu
 
 ## HTML in 2025: Underused and Undervalued
 
-The truth is, HTML and CSS in 2025 are more powerful than many developers realize. Features like CSS nesting, attribute selectors, and custom elements give us expressive, declarative tools that work everywhere – without JavaScript or build systems. Put together, these practices feel futuristic – like coding in the year 3000! – even though most of them have been around for years.
+The truth is, HTML and CSS in 2025 are more powerful than many developers realize. Features like CSS nesting, attribute selectors, and custom elements give us expressive, declarative tools that work everywhere without JavaScript or build systems. Put together, these practices feel futuristic – like coding in the year 3000! – even though most of them have been around for years.
 
 That’s why I call this approach **HTML3000**.
 
@@ -39,7 +39,7 @@ At its core, HTML3000 is about leaning into semantics and writing HTML that desc
 
 The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more. It’s “just HTML” but written differently.
 
-## A quick note on custom HTML tags
+## A note on custom HTML tags
 
 There's quite a bit of confusion about this feature. The TL;DR is **all you need to use a custom HTML tag is add it to your HTML**.
 
@@ -83,6 +83,6 @@ If this resonates, I recommend checking out:
 
 HTML3000 isn’t a framework, library, or package you install. It’s a set of practices that rediscover the expressive power of HTML and CSS – tools that already run everywhere. It’s about writing code for the web that’s semantic, declarative, and future-proof.
 
-If the early web was about documents, and the last decade was about JavaScript-driven UIs, perhaps the next step is recognizing that the simplest building blocks–HTML and CSS–already take us surprisingly far.
+If the early web was about documents, and the last decade was about JavaScript-driven UIs, perhaps the next step is recognizing that the simplest building blocks – HTML and CSS – already take us surprisingly far.
 
 HTML3000 isn’t just a practice. It’s a promise: **no more meaningless markup.** Because the future of the web shouldn’t be meaningless.
