@@ -22,7 +22,7 @@ h3 {
   font-weight: var(--heading-font-weight);
 }
 
-aside {
+main > aside {
   border: 1px solid var(--pico-color-amber-700);
   border-radius: 20px;
   padding: 20px;
