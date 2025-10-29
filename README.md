@@ -4,8 +4,6 @@ When Tim Berners-Lee invented HTML his idea was to share documents – scientifi
 
 This works great for blogs, news articles, but the web has changed. Today, the majority of what we build are applications, not documents, and the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts – none of these map neatly to `<article>`, `<header>`, or `<p>`. Instead, we’ve been shoehorning them into non-semantic catch-alls: `<div>` and `<span>`.
 
-It’s time to say it: `<div>` and `<span>` are crutches. They’re lazy. They don’t mean anything. And the fact that our modern front-ends are built almost entirely out of them is… embarrassing.
-
 ## Why `<div>`s Are Harmful
 
 `<div>`s are the duct tape of web development. They:
