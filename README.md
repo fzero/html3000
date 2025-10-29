@@ -2,7 +2,7 @@
 
 When Tim Berners-Lee invented HTML his idea was to share documents – scientific papers to be precise. This document shape is still with us after all this time. That's why we have elements like `<article>`, `<aside>`, `<header>`, `<footer>`, `<p>` and so on.
 
-This works great for blogs, news articles, but the web has changed. Today, the majority of what we build are applications, not documents, and the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts – none of these map neatly to `<article>`, `<header>`, or `<p>`. Instead, we’ve been shoehorning them into non-semantic catch-alls: `<div>` and `<span>`.
+This works great for articles and blogs, but the web has changed. Today the majority of what we build are applications, not documents, and the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts – none of these map neatly to `<article>`, `<header>`, or `<p>`. Instead, we’ve been shoehorning them into non-semantic catch-alls: `<div>` and `<span>`.
 
 ## Why `<div>`s Are Harmful
 
@@ -13,7 +13,9 @@ This works great for blogs, news articles, but the web has changed. Today, the m
 - Make code unreadable – it takes mental effort to decode what a Tailwind block is actually doing.
 - Encourage short-term hacks instead of long-term maintainable patterns.
 
-The irony is that React developers already know this. They write `<Panel>`, `<Button>`, `<Logo>`, `<Nav>` every day in JSX. Those are semantic! But paradoxically, the same community often declares that semantic HTML is “dead.” I’d argue it isn’t. In fact, semantic HTML is more important than ever.
+The irony is that React developers already know this. They write `<Panel>`, `<Button>`, `<Logo>`, `<Nav>` every day in JSX. Those are semantic! But paradoxically, the same community often declares that semantic HTML is "dead."
+
+It most definitely isn't. In fact, semantic HTML is more important than ever.
 
 ## HTML in 2025: Underused and Undervalued
 
@@ -37,7 +39,7 @@ At its core, HTML3000 is about leaning into semantics and writing HTML that desc
 
 The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more. It’s “just HTML” but written differently.
 
-## A note on custom HTML tags
+## A note on custom tags
 
 There's quite a bit of confusion about this feature. The TL;DR is **all you need to use a custom HTML tag is add it to your HTML**.
 
@@ -55,22 +57,20 @@ That's how we're getting rid of `<span>` and `<div>` in favour of fully semantic
 
 - **Readable code** – you know what’s on the page without tracing through CSS classes.
 - **Maintainability** – meaningful tags are easier to refactor and extend.
-- **Consistency** – you naturally create component patterns instead of ad hoc markup.
+- **Consistency** – naming things pushes you to think in component patterns instead of ad hoc markup.
 - **Freedom from bloat** – less dependence on utility libraries to patch over missing semantics.
 
 ## Why This Matters
 
-Using semantic, declarative markup makes code easier to read, reason about, and maintain. Instead of wading through endless utility classes, you see the actual structure of your UI. Consistency emerges naturally, and you’re nudged toward building standardized, reusable components.
+Using semantic, declarative markup makes code easier to read, reason about and maintain. Instead of wading through endless utility classes you see the actual structure of your UI. Consistency emerges naturally and you’re nudged toward building standardized, reusable components.
 
-Is this a design system? Nope! But any serious application needs consistent UX, and HTML3000 encourages you to think in components from the start.
+**Is this a design system?** Nope! But any serious application needs consistent UX, and HTML3000 encourages you to think in components from the start.
 
 ## Adopting HTML3000 Incrementally
 
-You don’t need to rewrite everything overnight. Even small steps–like replacing anonymous `<div>`s with meaningful custom tags–can dramatically improve readability. You can go further by experimenting with attribute selectors or phasing out class-heavy patterns where they don’t serve you.
+You don’t need to rewrite everything overnight. Even small steps like replacing anonymous `<div>`s with meaningful custom tags can dramatically improve readability. You can go further by experimenting with attribute selectors or phasing out class-heavy patterns where they don’t serve you.
 
 ## Further Reading
-
-If this resonates, I recommend checking out:
 
 - [CSS Classes Considered Harmful](https://www.keithcirkel.co.uk/css-classes-considered-harmful) – the article that sparked much of this thinking.
 - [Why Semantic HTML Still Matters](https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters) – a reminder of the foundations we’ve drifted from.
@@ -81,6 +81,6 @@ If this resonates, I recommend checking out:
 
 HTML3000 isn’t a framework, library, or package you install. It’s a set of practices that rediscover the expressive power of HTML and CSS – tools that already run everywhere. It’s about writing code for the web that’s semantic, declarative, and future-proof.
 
-If the early web was about documents, and the last decade was about JavaScript-driven UIs, perhaps the next step is recognizing that the simplest building blocks – HTML and CSS – already take us surprisingly far.
+If the early web was about documents and the last decade was about JavaScript-driven UIs, perhaps the next step is recognizing that the simplest building blocks – HTML and CSS – already take us surprisingly far.
 
 HTML3000 isn’t just a practice. It’s a promise: **no more meaningless markup.** Because the future of the web shouldn’t be meaningless.
