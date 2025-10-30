@@ -25,7 +25,7 @@ That’s why I call this approach **HTML3000**.
 
 ## The Principles
 
-At its core, HTML3000 is about leaning into semantics and writing HTML that describes _what_ an element is, not just _how_ it looks. The key principles are:
+At its core, HTML3000 is about leaning into semantics and writing HTML that describes _what_ an element is, not just _how it looks_. The key principles are:
 
 - **Use custom HTML tags extensively.** No `<div>` or `<span>`. If you feel you need these tags, take a step back and figure out what you actually mean.
 
