@@ -41,7 +41,7 @@ The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Ho
 
 ## A note on custom tags
 
-There's quite a bit of confusion about this feature. The TL;DR is **all you need to use a custom HTML tag is add it to your HTML**.
+There's quite a bit of confusion about this feature. TL;DR: **you can just write them in your code like any other HTML tag**.
 
 In other words, you can go ahead and type `<my-tag>` on your code and it will behave like a `<span>`.
 
