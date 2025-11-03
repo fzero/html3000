@@ -15,6 +15,11 @@
   }
 }
 
+html, 
+body {
+  accent-color: var(--pico-background-color);
+}
+
 h1,
 h2,
 h3 {
