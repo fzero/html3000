@@ -6,7 +6,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="No divs, no spans, no classes, no problem" />
+    <meta
+      name="description"
+      content="No divs, no spans, no classes, no problem"
+    />
     <meta name="theme-color" content="#13171f" />
     <title>HTML3000: A Better Way to Write HTML for Modern Apps</title>
 
@@ -15,7 +18,10 @@
       property="og:title"
       content="HTML3000: A Better Way to Write HTML for Modern Apps"
     />
-    <meta property="og:description" content="No divs, no spans, no classes,no problem" />
+    <meta
+      property="og:description"
+      content="No divs, no spans, no classes,no problem"
+    />
     <meta property="og:url" content="https://html3000.dev" />
     <meta property="og:site_name" content="HTML3000" />
     <meta property="og:type" content="website" />
@@ -34,7 +40,10 @@
       name="twitter:title"
       content="HTML3000: A Better Way to Write HTML for Modern Apps"
     />
-    <meta name="twitter:description" content="No divs, no spans, no classes, no problem" />
+    <meta
+      name="twitter:description"
+      content="No divs, no spans, no classes, no problem"
+    />
     <meta
       name="twitter:image"
       content="https://html3000.dev/assets/html3000-squared.png"
@@ -151,8 +160,8 @@
 
       <p>
         At its core, HTML3000 is about leaning into semantics and writing HTML
-        that describes <em>what</em> an element is, not just <em>how it
-        looks</em>. The key principles are:
+        that describes <em>what</em> an element is, not just
+        <em>how it looks</em>. The key principles are:
       </p>
 
       <ul>
@@ -197,36 +206,31 @@
       </p>
 
       <aside>
-        <h2>A note on custom tags</h2>
+        <h2>Wait, Don't I Need Javascript To Do That?</h2>
+
+        <p>TL;DR: No.</p>
 
         <p>
-          There's quite a bit of confusion about this feature. TL;DR:
-          <strong>
-            you can just write them in your code like any other HTML tag.
-          </strong>
+          Custom tags have been allowed since HTML5 was released in January of
+          2008. You can go ahead and type <code>&lt;my-tag&gt;</code> on your
+          code and it will behave like a <code>&lt;span&gt;</code>.
         </p>
 
         <p>
-          In other words, you can go ahead and type
-          <code>&lt;my-tag&gt;</code> on your code and it will behave like a
-          <code>&lt;span&gt;</code>.
+          Any custom tag is by definition not strictly standard HTML – it's
+          <em>custom</em> after all! – but their default behaviour is
+          standardized.
         </p>
 
         <p>
-          Yes, that's all. This has been the case since HTML5 was released in
-          January of 2008.
-        </p>
-
-        <p>
-          I believe the confusion began when
+          Javascript is only needed if you're implementing interactive
+          behaviours, as usual. Complex elements with all bells and whistles can
+          always be created as
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
             target="_blank"
-          >
-            web components
-          </a>
-          became a thing. The communication around them was never very clear to
-          begin with, so this is no surprise.
+            >web components</a
+          >, but that's not what we're talking about here.
         </p>
 
         <p>
@@ -364,7 +368,8 @@
 
       <ul>
         <li>
-          <a href="https://www.keithcirkel.co.uk/css-classes-considered-harmful"
+          <a
+            href="https://www.keithcirkel.co.uk/css-classes-considered-harmful"
             target="_blank"
             >CSS Classes Considered Harmful</a
           >
@@ -379,16 +384,15 @@
           – a reminder of the foundations we’ve drifted from.
         </li>
         <li>
-          <a
-            href="https://gomakethings.com/just-use-a-button/"
-            target="_blank"
+          <a href="https://gomakethings.com/just-use-a-button/" target="_blank"
             >Just Use A Button</a
           >
-          – don't use a <code>&lt;div&gt;</code> to do a <code>&lt;button&gt;</code>'s job.
+          – don't use a <code>&lt;div&gt;</code> to do a
+          <code>&lt;button&gt;</code>'s job.
         </li>
         <li>
-          <a href="https://picocss.com/" target="_blank">PicoCSS</a> – a CSS framework that
-          embraces semantic, class-less markup.
+          <a href="https://picocss.com/" target="_blank">PicoCSS</a> – a CSS
+          framework that embraces semantic, class-less markup.
         </li>
       </ul>
 

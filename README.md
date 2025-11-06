@@ -39,15 +39,15 @@ At its core, HTML3000 is about leaning into semantics and writing HTML that desc
 
 The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more. It’s “just HTML” but written differently.
 
-## A note on custom tags
+## Wait, Don't I Need Javascript To Do That?
 
-There's quite a bit of confusion about this feature. TL;DR: **you can just write them in your code like any other HTML tag**.
+TL;DR: No.
 
-In other words, you can go ahead and type `<my-tag>` on your code and it will behave like a `<span>`.
+Custom tags have been allowed since HTML5 was released in January of 2008. You can go ahead and type `<my-tag>` on your code and it will behave like a `<span>`.
 
-Yes, that's all. This has been the case since HTML5 was released in January of 2008.
+Any custom tag is by definition not strictly standard HTML – it's _custom_ after all! – but their default behaviour is standardized.
 
-I believe the confusion began when [web components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) became a thing. The communication around them was never very clear to begin with, so this is no surprise.
+Javascript is only needed if you're implementing interactive behaviours, as usual. Complex elements with all bells and whistles can always be created as [web components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components), but that's not what we're talking about here.
 
 Rest assured these are two separate features: custom HTML tags don't need any Javascript to work. You can simply add them to your code and apply CSS defitions as you would for any other HTML tag.
 
@@ -74,6 +74,7 @@ You don’t need to rewrite everything overnight. Even small steps like replacin
 
 - [CSS Classes Considered Harmful](https://www.keithcirkel.co.uk/css-classes-considered-harmful) – the article that sparked much of this thinking.
 - [Why Semantic HTML Still Matters](https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters) – a reminder of the foundations we’ve drifted from.
+- [Just use a button](https://gomakethings.com/just-use-a-button/) - Don't use a `<div>` to do a `<button>`'s job.
 - [PicoCSS](https://picocss.com/) – a CSS framework that embraces semantic, class-less markup.
 
 
