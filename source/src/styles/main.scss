@@ -1,0 +1,77 @@
+@use "@picocss/pico/scss/pico" with (
+  $enable-semantic-container: true,
+  $enable-classes: false,
+  $theme-color: "amber"
+);
+
+@use "@picocss/pico/scss/colors";
+
+:root {
+  --heading-font: "Chakra Petch", sans-serif;
+  --heading-font-weight: 400;
+  --body-font: "Overpass Mono", monospace;
+}
+
+@media (min-width: 1280px) {
+  body > main {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1536px) {
+  body > main {
+    max-width: 50%;
+  }
+}
+
+body {
+  font-size: 0.85rem;
+}
+
+body,
+code,
+pre {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+}
+
+logo {
+  font-family: var(--heading-font);
+  font-weight: bold;
+  display: block;
+  font-size: 7.5vw;
+  color: var(--pico-primary);
+  margin-bottom: 1rem;
+}
+
+logo-inner {
+  display: inline;
+  border: 1px solid var(--pico-primary);
+}
+
+logo-inner em {
+  font-style: normal;
+  background-color: var(--pico-primary);
+  color: var(--pico-background-color);
+}
+
+copyright {
+  display: block;
+  font-family: var(--heading-font);
+  text-align: center;
+  padding-top: 24px;
+  margin-top: 48px;
+  border-top: 1px solid currentColor;
+}
+
+tagline {
+  display: block;
+  text-align: center;
+  margin: 24px;
+}
