@@ -1,4 +1,4 @@
-# HTML3000: A Better Way to Write HTML for Modern Apps
+# A Better Way to Write HTML for Modern Apps
 
 When Tim Berners-Lee invented HTML his idea was to share documents – scientific papers to be precise. This document shape is still with us after all this time. That's why we have elements like `<article>`, `<aside>`, `<header>`, `<footer>`, `<p>` and so on.
 
@@ -27,7 +27,7 @@ That’s why I call this approach **HTML3000**.
 
 At its core, HTML3000 is about leaning into semantics and writing HTML that describes _what_ an element is, not just _how it looks_. The key principles are:
 
-- **Use custom HTML tags extensively.** No `<div>` or `<span>`. If you feel you need these tags, take a step back and figure out what you actually mean.
+- **Use custom HTML tags extensively.** No `<div>` or `<span>`. If you feel you need these tags, take a step back and figure out what you actually mean. Existing semantinc HTML tags should be considered first but the moment you need something new, build it!
 
 - **Favor context and nesting over class soup.** Remember what the “C” in CSS stands for.
 
@@ -52,6 +52,76 @@ Javascript is only needed if you're implementing interactive behaviours, as usua
 Rest assured these are two separate features: custom HTML tags don't need any Javascript to work. You can simply add them to your code and apply CSS defitions as you would for any other HTML tag.
 
 That's how we're getting rid of `<span>` and `<div>` in favour of fully semantic tags to describe applications UIs.
+
+## Fixing the Tailwind website example
+
+<p
+  class="codepen"
+  data-height="400"
+  data-default-tab="html,result"
+  data-slug-hash="JoYLqoP"
+  data-pen-title="HTML3000: Fixing the Now Playing Tailwind example"
+  data-user="fzero"
+  data-editable="true"
+  style="
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    margin: 1em 0;
+    padding: 1em;
+  "
+>
+  <span
+    >See the Pen
+    <a href="https://codepen.io/fzero/pen/JoYLqoP">
+      HTML3000: Fixing the Now Playing Tailwind example</a
+    >
+    by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>) on
+    <a href="https://codepen.io">CodePen</a>.</span
+  >
+</p>
+<script
+  async
+  src="https://public.codepenassets.com/embed/index.js"
+></script>
+
+## A javascript-free badge component
+
+<p
+  class="codepen"
+  data-height="400"
+  data-default-tab="html,result"
+  data-slug-hash="vENRMWB"
+  data-pen-title="HTML3000: Badge example"
+  data-editable="true"
+  data-user="fzero"
+  style="
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    margin: 1em 0;
+    padding: 1em;
+  "
+>
+  <span
+    >See the Pen
+    <a href="https://codepen.io/fzero/pen/vENRMWB">
+      HTML3000: Badge example</a
+    >
+    by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>) on
+    <a href="https://codepen.io">CodePen</a>.</span
+  >
+</p>
+<script
+  async
+  src="https://public.codepenassets.com/embed/index.js"
+></script>
 
 ## What You Gain Without `<div>`s
 
