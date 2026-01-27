@@ -1,437 +1,104 @@
-<!-- No build system was harmed in the making of this website -->
-<!doctype html>
-<html lang="en" data-theme="dark">
-  <head>
-    <!-- Meta -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <meta
-      name="description"
-      content="No divs, no spans, no classes, no problem"
-    />
-    <meta name="theme-color" content="#13171f" />
-    <title>HTML3000: A Better Way to Write HTML for Modern Apps</title>
-
-    <!-- Open Graph -->
-    <meta
-      property="og:title"
-      content="HTML3000: A Better Way to Write HTML for Modern Apps"
-    />
-    <meta
-      property="og:description"
-      content="No divs, no spans, no classes,no problem"
-    />
-    <meta property="og:url" content="https://html3000.dev" />
-    <meta property="og:site_name" content="HTML3000" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en_US" />
-    <meta
-      property="og:image"
-      content="https://html3000.dev/assets/html3000-squared.png"
-    />
-    <meta property="og:image:alt" content="HTML3000" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="HTML3000: A Better Way to Write HTML for Modern Apps"
-    />
-    <meta
-      name="twitter:description"
-      content="No divs, no spans, no classes, no problem"
-    />
-    <meta
-      name="twitter:image"
-      content="https://html3000.dev/assets/html3000-squared.png"
-    />
-    <meta name="twitter:image:alt" content="HTML3000" />
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Overpass+Mono:400&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/pico.colors.min.css" />
-    <link rel="stylesheet" href="css/pico.classless.amber.min.css" />
-    <link rel="stylesheet" href="css/main.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/assets/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
-  </head>
-
-  <body>
-    <main>
-      <logo>
-        <logo-inner> <em>HTML</em>3000 </logo-inner>
-      </logo>
-
-      <h1>A Better Way to Write HTML for Modern Apps</h1>
-
-      <p>
-        When Tim Berners-Lee invented HTML his idea was to share documents –
-        scientific papers to be precise. This document shape is still with us
-        after all this time. That's why we have elements like
-        <code>&lt;article&gt;</code>, <code>&lt;aside&gt;</code>,
-        <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
-        <code>&lt;p&gt;</code> and so on.
-      </p>
-
-      <p>
-        This works great for articles and blogs, but the web has changed. Today
-        the majority of what we build are applications, not documents, and the
-        metaphors of documents don’t always fit application interfaces.
-        Carousels, badges, counters, avatars, alerts – none of these map neatly
-        to <code>&lt;article&gt;</code>, <code>&lt;header&gt;</code>, or
-        <code>&lt;p&gt;</code>. Instead, we’ve been shoehorning them into
-        non-semantic catch-alls: <code>&lt;div&gt;</code> and
-        <code>&lt;span&gt;</code>.
-      </p>
-
-      <h2>Why <code>&lt;div&gt;</code>s Are Harmful</h2>
-
-      <p>
-        <code>&lt;div&gt;</code>s are the duct tape of web development. They:
-      </p>
-
-      <ul>
-        <li>Hide the true structure of the UI.</li>
-        <li>Depend on fragile, bloated class names for meaning.</li>
-        <li>
-          Make code unreadable – it takes mental effort to decode what a
-          Tailwind block is actually doing.
-        </li>
-        <li>
-          Encourage short-term hacks instead of long-term maintainable patterns.
-        </li>
-      </ul>
-
-      <p>
-        The irony is that React developers already know this. They write
-        <code>&lt;Panel&gt;</code>, <code>&lt;Button&gt;</code>,
-        <code>&lt;Logo&gt;</code>, <code>&lt;Nav&gt;</code> every day in JSX.
-        Those are semantic! But paradoxically, the same community often declares
-        that semantic HTML is "dead."
-      </p>
-
-      <p>
-        It most definitely isn't. In fact, semantic HTML is more important than
-        ever.
-      </p>
-
-      <h2>HTML in 2025: Underused and Undervalued</h2>
-
-      <p>
-        The truth is, HTML and CSS in 2025 are more powerful than many
-        developers realize. Features like CSS nesting, attribute selectors, and
-        custom elements give us expressive, declarative tools that work
-        everywhere without JavaScript or build systems. Put together, these
-        practices feel futuristic – like coding in the year 3000! – even though
-        most of them have been around for years.
-      </p>
-
-      <p>That’s why I call this approach <strong>HTML3000</strong>.</p>
-
-      <h2>The Principles</h2>
-
-      <p>
-        At its core, HTML3000 is about leaning into semantics and writing HTML
-        that describes <em>what</em> an element is, not just
-        <em>how it looks</em>. The key principles are:
-      </p>
-
-      <ul>
-        <li>
-          <p>
-            <strong>Use custom HTML tags extensively.</strong> No
-            <code>&lt;div&gt;</code> or <code>&lt;span&gt;</code>. If you feel
-            you need these tags, take a step back and figure out what you
-            actually mean.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Favor context and nesting over class soup.</strong> Remember
-            what the “C” in CSS stands for.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Use attributes instead of classes as CSS hooks.</strong>
-            Double down on declarative patterns.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Start with reusable patterns</strong> and componentize
-            later.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>JavaScript comes last.</strong> Focus on structure and
-            styling before behavior.
-          </p>
-        </li>
-      </ul>
-
-      <p>
-        The goal isn’t to throw out modern tooling. HTML3000 plays nicely with
-        ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more.
-        It’s "just HTML" but written differently.
-      </p>
-
-      <aside>
-        <h2>Wait, Don't I Need Javascript To Do That?</h2>
-
-        <p>TL;DR: No.</p>
-
-        <p>
-          Custom tags have been allowed since HTML5 was released in January of
-          2008. You can go ahead and type <code>&lt;my-tag&gt;</code> on your
-          code and it will behave like a <code>&lt;span&gt;</code>.
-        </p>
-
-        <p>
-          Any custom tag is by definition not strictly standard HTML – it's
-          <em>custom</em> after all! – but their default behaviour is
-          standardized.
-        </p>
-
-        <p>
-          Javascript is only needed if you're implementing interactive
-          behaviours, as usual. Complex elements with all bells and whistles can
-          always be created as
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components"
-            target="_blank"
-            >web components</a
-          >, but that's not what we're talking about here.
-        </p>
-
-        <p>
-          Rest assured these are two separate features: custom HTML tags don't
-          need any Javascript to work. You can simply add them to your code and
-          apply CSS defitions as you would for any other HTML tag.
-        </p>
-
-        <p>
-          That's how we're getting rid of <code>&lt;span&gt;</code> and
-          <code>&lt;div&gt;</code> in favour of fully semantic tags to describe
-          applications UIs.
-        </p>
-      </aside>
-
-      <h2>Examples</h2>
-
-      <h3>Fixing the Tailwind website example</h3>
-
-      <p
-        class="codepen"
-        data-height="400"
-        data-default-tab="html,result"
-        data-slug-hash="JoYLqoP"
-        data-pen-title="HTML3000: Fixing the Now Playing Tailwind example"
-        data-user="fzero"
-        data-editable="true"
-        style="
-          height: 400px;
-          box-sizing: border-box;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 2px solid;
-          margin: 1em 0;
-          padding: 1em;
-        "
-      >
-        <span
-          >See the Pen
-          <a href="https://codepen.io/fzero/pen/JoYLqoP">
-            HTML3000: Fixing the Now Playing Tailwind example</a
-          >
-          by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>) on
-          <a href="https://codepen.io">CodePen</a>.</span
-        >
-      </p>
-      <script
-        async
-        src="https://public.codepenassets.com/embed/index.js"
-      ></script>
-
-      <h3>A javascript-free badge component</h3>
-
-      <p
-        class="codepen"
-        data-height="400"
-        data-default-tab="html,result"
-        data-slug-hash="vENRMWB"
-        data-pen-title="HTML3000: Badge example"
-        data-editable="true"
-        data-user="fzero"
-        style="
-          height: 400px;
-          box-sizing: border-box;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 2px solid;
-          margin: 1em 0;
-          padding: 1em;
-        "
-      >
-        <span
-          >See the Pen
-          <a href="https://codepen.io/fzero/pen/vENRMWB">
-            HTML3000: Badge example</a
-          >
-          by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>) on
-          <a href="https://codepen.io">CodePen</a>.</span
-        >
-      </p>
-      <script
-        async
-        src="https://public.codepenassets.com/embed/index.js"
-      ></script>
-
-      <h2>What You Gain Without <code>&lt;div&gt;</code>s</h2>
-
-      <ul>
-        <li>
-          <strong>Readable code</strong> – you know what’s on the page without
-          tracing through CSS classes.
-        </li>
-        <li>
-          <strong>Maintainability</strong> – meaningful tags are easier to
-          refactor and extend.
-        </li>
-        <li>
-          <strong>Consistency</strong> – naming things pushes you to think in
-          component patterns instead of ad hoc markup.
-        </li>
-        <li>
-          <strong>Freedom from bloat</strong> – less dependence on utility
-          libraries to patch over missing semantics.
-        </li>
-      </ul>
-
-      <h2>Why This Matters</h2>
-
-      <p>
-        Using semantic, declarative markup makes code easier to read, reason
-        about and maintain. Instead of wading through endless utility classes
-        you see the actual structure of your UI. Consistency emerges naturally
-        and you’re nudged toward building standardized, reusable components.
-      </p>
-
-      <p>
-        <strong>Is this a design system?</strong> Nope! But any serious
-        application needs consistent UX, and HTML3000 encourages you to think in
-        components from the start.
-      </p>
-
-      <h2>Adopting HTML3000 Incrementally</h2>
-
-      <p>
-        You don’t need to rewrite everything overnight. Even small steps like
-        replacing anonymous <code>&lt;div&gt;</code>s with meaningful custom
-        tags can dramatically improve readability. You can go further by
-        experimenting with attribute selectors or phasing out class-heavy
-        patterns where they don’t serve you.
-      </p>
-
-      <h2>Further Reading</h2>
-
-      <ul>
-        <li>
-          <a
-            href="https://www.keithcirkel.co.uk/css-classes-considered-harmful"
-            target="_blank"
-            >CSS Classes Considered Harmful</a
-          >
-          – the article that sparked much of this thinking.
-        </li>
-        <li>
-          <a
-            href="https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters"
-            target="_blank"
-            >Why Semantic HTML Still Matters</a
-          >
-          – a reminder of the foundations we’ve drifted from.
-        </li>
-        <li>
-          <a href="https://gomakethings.com/just-use-a-button/" target="_blank"
-            >Just Use A Button</a
-          >
-          – don't use a <code>&lt;div&gt;</code> to do a
-          <code>&lt;button&gt;</code>'s job.
-        </li>
-        <li>
-          <a href="https://picocss.com/" target="_blank">PicoCSS</a> – a CSS
-          framework that embraces semantic, class-less markup.
-        </li>
-      </ul>
-
-      <h2>Looking Ahead</h2>
-
-      <p>
-        HTML3000 isn’t a framework, library, or package you install. It’s a set
-        of practices that rediscover the expressive power of HTML and CSS –
-        tools that already run everywhere. It’s about writing code for the web
-        that’s semantic, declarative, and future-proof.
-      </p>
-
-      <p>
-        If the early web was about documents and the last decade was about
-        JavaScript-driven UIs, perhaps the next step is recognizing that the
-        simplest building blocks – HTML and CSS – already take us surprisingly
-        far.
-      </p>
-
-      <p>
-        HTML3000 isn’t just a practice. It’s a promise:
-        <strong>no more meaningless markup.</strong> Because the future of the
-        web shouldn’t be meaningless.
-      </p>
-
-      <copyright>
-        <small>
-          HTML3000 &copy; 2025 by
-          <a href="https://fabioneves.ca" target="_blank"> Fabio Neves </a>
-        </small>
-      </copyright>
-
-      <tagline title="Proudly Canadian | Antifascist to the core">
-        🇨🇦🏳️‍🌈✊
-      </tagline>
-    </main>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en" data-theme="dark"> <head><!-- Meta --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="description" content="No divs, no spans, no classes, no problem"><meta name="theme-color" content="#13171f"><title>HTML3000: A Better Way to Write HTML for Modern Apps</title><!-- Open Graph --><meta property="og:title" content="HTML3000: A Better Way to Write HTML for Modern Apps"><meta property="og:description" content="No divs, no spans, no classes,no problem"><meta property="og:url" content="https://html3000.dev/"><meta property="og:site_name" content="HTML3000"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://html3000.dev/assets/html3000-squared.png"><meta property="og:image:alt" content="HTML3000"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="HTML3000: A Better Way to Write HTML for Modern Apps"><meta name="twitter:description" content="No divs, no spans, no classes, no problem"><meta name="twitter:image" content="https://html3000.dev/assets/html3000-squared.png"><meta name="twitter:image:alt" content="HTML3000"><!-- Fonts --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400&display=swap" rel="stylesheet"><!-- Favicons --><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/favicons/site.webmanifest"><link rel="stylesheet" href="/_astro/index.DfpuosgS.css"></head><body> <main>  <logo data-astro-cid-tvrurpns> <logo-inner data-astro-cid-tvrurpns="true"> <em data-astro-cid-tvrurpns>HTML</em>3000 </logo-inner> </logo>  <h1 id="a-better-way-to-write-html-for-modern-apps">A Better Way to Write HTML for Modern Apps</h1>
+<p>When Tim Berners-Lee invented HTML his idea was to share documents – scientific papers to be precise. This document shape is still with us after all this time. That’s why we have elements like <code>&#x3C;article></code>, <code>&#x3C;aside></code>, <code>&#x3C;header></code>, <code>&#x3C;footer></code>, <code>&#x3C;p></code> and so on.</p>
+<p>This works great for articles and blogs, but the web has changed. Today the majority of what we build are applications, not documents, and the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts – none of these map neatly to <code>&#x3C;article></code>, <code>&#x3C;header></code>, or <code>&#x3C;p></code>. Instead, we’ve been shoehorning them into non-semantic catch-alls: <code>&#x3C;div></code> and <code>&#x3C;span></code>.</p>
+<h2 id="why-divs-are-harmful">Why <code>&#x3C;div></code>s Are Harmful</h2>
+<p><code>&#x3C;div></code>s are the duct tape of web development. They:</p>
+<ul>
+<li>Hide the true structure of the UI.</li>
+<li>Depend on fragile, bloated class names for meaning.</li>
+<li>Make code unreadable – it takes mental effort to decode what a Tailwind block is actually doing.</li>
+<li>Encourage short-term hacks instead of long-term maintainable patterns.</li>
+</ul>
+<p>The irony is that React developers already know this. They write <code>&#x3C;Panel></code>, <code>&#x3C;Button></code>, <code>&#x3C;Logo></code>, <code>&#x3C;Nav></code> every day in JSX. Those are semantic! But paradoxically, the same community often declares that semantic HTML is “dead.”</p>
+<p>It most definitely isn’t. In fact, semantic HTML is more important than ever.</p>
+<h2 id="html-in-2025-underused-and-undervalued">HTML in 2025: Underused and Undervalued</h2>
+<p>The truth is, HTML and CSS in 2025 are more powerful than many developers realize. Features like CSS nesting, attribute selectors, and custom elements give us expressive, declarative tools that work everywhere without JavaScript or build systems. Put together, these practices feel futuristic – like coding in the year 3000! – even though most of them have been around for years.</p>
+<p>That’s why I call this approach <strong>HTML3000</strong>.</p>
+<h2 id="the-principles">The Principles</h2>
+<p>At its core, HTML3000 is about leaning into semantics and writing HTML that describes <em>what</em> an element is, not just <em>how it looks</em>. The key principles are:</p>
+<ul>
+<li>
+<p><strong>Use custom HTML tags extensively.</strong> No <code>&#x3C;div></code> or <code>&#x3C;span></code>. If you feel you need these tags, take a step back and figure out what you actually mean. Existing semantinc HTML tags should be considered first but the moment you need something new, build it!</p>
+</li>
+<li>
+<p><strong>Favor context and nesting over class soup.</strong> Remember what the “C” in CSS stands for.</p>
+</li>
+<li>
+<p><strong>Use attributes instead of classes as CSS hooks.</strong> Double down on declarative patterns.</p>
+</li>
+<li>
+<p><strong>Start with reusable patterns</strong> and componentize later.</p>
+</li>
+<li>
+<p><strong>JavaScript comes last.</strong> Focus on structure and styling before behavior.</p>
+</li>
+</ul>
+<p>The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more. It’s “just HTML” but written differently.</p>
+<h2 id="wait-dont-i-need-javascript-to-do-that">Wait, Don’t I Need Javascript To Do That?</h2>
+<p>TL;DR: No.</p>
+<p>Custom tags have been allowed since HTML5 was released in January of 2008. You can go ahead and type <code>&#x3C;my-tag></code> on your code and it will behave like a <code>&#x3C;span></code>.</p>
+<p>Any custom tag is by definition not strictly standard HTML – it’s <em>custom</em> after all! – but their default behaviour is standardized.</p>
+<p>Javascript is only needed if you’re implementing interactive behaviours, as usual. Complex elements with all bells and whistles can always be created as <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_components">web components</a>, but that’s not what we’re talking about here.</p>
+<p>Rest assured these are two separate features: custom HTML tags don’t need any Javascript to work. You can simply add them to your code and apply CSS defitions as you would for any other HTML tag.</p>
+<p>That’s how we’re getting rid of <code>&#x3C;span></code> and <code>&#x3C;div></code> in favour of fully semantic tags to describe applications UIs.</p>
+<h2 id="fixing-the-tailwind-website-example">Fixing the Tailwind website example</h2>
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="JoYLqoP" data-pen-title="HTML3000: Fixing the Now Playing Tailwind example" data-user="fzero" data-editable="true" style="
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    margin: 1em 0;
+    padding: 1em;
+  ">
+  <span>See the Pen
+    <a href="https://codepen.io/fzero/pen/JoYLqoP">
+      HTML3000: Fixing the Now Playing Tailwind example</a>
+    by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>) on
+    <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<h2 id="a-javascript-free-badge-component">A javascript-free badge component</h2>
+<p class="codepen" data-height="400" data-default-tab="html,result" data-slug-hash="vENRMWB" data-pen-title="HTML3000: Badge example" data-editable="true" data-user="fzero" style="
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    margin: 1em 0;
+    padding: 1em;
+  ">
+  <span>See the Pen
+    <a href="https://codepen.io/fzero/pen/vENRMWB">
+      HTML3000: Badge example</a>
+    by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>) on
+    <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://public.codepenassets.com/embed/index.js"></script>
+<h2 id="what-you-gain-without-divs">What You Gain Without <code>&#x3C;div></code>s</h2>
+<ul>
+<li><strong>Readable code</strong> – you know what’s on the page without tracing through CSS classes.</li>
+<li><strong>Maintainability</strong> – meaningful tags are easier to refactor and extend.</li>
+<li><strong>Consistency</strong> – naming things pushes you to think in component patterns instead of ad hoc markup.</li>
+<li><strong>Freedom from bloat</strong> – less dependence on utility libraries to patch over missing semantics.</li>
+</ul>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Using semantic, declarative markup makes code easier to read, reason about and maintain. Instead of wading through endless utility classes you see the actual structure of your UI. Consistency emerges naturally and you’re nudged toward building standardized, reusable components.</p>
+<p><strong>Is this a design system?</strong> Nope! But any serious application needs consistent UX, and HTML3000 encourages you to think in components from the start.</p>
+<h2 id="adopting-html3000-incrementally">Adopting HTML3000 Incrementally</h2>
+<p>You don’t need to rewrite everything overnight. Even small steps like replacing anonymous <code>&#x3C;div></code>s with meaningful custom tags can dramatically improve readability. You can go further by experimenting with attribute selectors or phasing out class-heavy patterns where they don’t serve you.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="https://www.keithcirkel.co.uk/css-classes-considered-harmful">CSS Classes Considered Harmful</a> – the article that sparked much of this thinking.</li>
+<li><a href="https://www.jonoalderson.com/conjecture/why-semantic-html-still-matters">Why Semantic HTML Still Matters</a> – a reminder of the foundations we’ve drifted from.</li>
+<li><a href="https://gomakethings.com/just-use-a-button/">Just use a button</a> - Don’t use a <code>&#x3C;div></code> to do a <code>&#x3C;button></code>’s job.</li>
+<li><a href="https://picocss.com/">PicoCSS</a> – a CSS framework that embraces semantic, class-less markup.</li>
+</ul>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>HTML3000 isn’t a framework, library, or package you install. It’s a set of practices that rediscover the expressive power of HTML and CSS – tools that already run everywhere. It’s about writing code for the web that’s semantic, declarative, and future-proof.</p>
+<p>If the early web was about documents and the last decade was about JavaScript-driven UIs, perhaps the next step is recognizing that the simplest building blocks – HTML and CSS – already take us surprisingly far.</p>
+<p>HTML3000 isn’t just a practice. It’s a promise: <strong>no more meaningless markup.</strong> Because the future of the web shouldn’t be meaningless.</p> <copyright data-astro-cid-55hnotdj> <small data-astro-cid-55hnotdj>
+HTML3000 &copy; 2025 by
+<a href="https://fabioneves.ca" target="_blank" data-astro-cid-55hnotdj> Fabio Neves </a> </small> </copyright>  <tagline title="Proudly Canadian | Antifascist to the core" data-astro-cid-she3nxt5> 🇨🇦🏳️‍🌈✊ </tagline>   </main> </body></html>
