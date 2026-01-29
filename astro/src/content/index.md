@@ -2,7 +2,9 @@
 
 When Tim Berners-Lee invented HTML his idea was to share documents – scientific papers to be precise. This document shape is still with us after all this time. That's why we have elements like `<article>`, `<aside>`, `<header>`, `<footer>`, `<p>` and so on.
 
-This works great for articles and blogs, but the web has changed. Today the majority of what we build are applications, not documents, and the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts – none of these map neatly to `<article>`, `<header>`, or `<p>`. Instead, we’ve been shoehorning them into non-semantic catch-alls: `<div>` and `<span>`.
+This works great for articles and blogs, but the web has changed. Today the majority of what we build are applications, not documents, and the metaphors of documents don’t always fit application interfaces. Carousels, badges, counters, avatars, alerts – none of these map neatly to `<article>`, `<header>`, or `<p>`.
+
+Instead, we’ve been shoehorning them into non-semantic catch-alls: `<div>` and `<span>`.
 
 ## Why `<div>`s Are Harmful
 
