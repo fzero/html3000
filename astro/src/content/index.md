@@ -29,7 +29,7 @@ That’s why I call this approach **HTML3000**.
 
 At its core, HTML3000 is about leaning into semantics and writing HTML that describes _what_ an element is, not just _how it looks_. The key principles are:
 
-- **Use custom HTML tags extensively.** No `<div>` or `<span>`. If you feel you need these tags, take a step back and figure out what you actually mean. Existing semantinc HTML tags should be considered first but the moment you need something new, build it!
+- **Use custom HTML tags extensively.** No `<div>` or `<span>`. If you feel you need these tags, take a step back and figure out what you actually mean. Existing semantic HTML tags should be considered first but the moment you need something new, build it!
 
 - **Favor context and nesting over class soup.** Remember what the “C” in CSS stands for.
 
