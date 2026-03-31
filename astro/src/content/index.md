@@ -55,6 +55,14 @@ Rest assured these are two separate features: custom HTML tags don't need any Ja
 
 That's how we're getting rid of `<span>` and `<div>` in favour of fully semantic tags to describe applications UIs.
 
+## What about SEO and a11y?
+
+There's literally no change when it comes to SEO since `<div>` and `<span>` are not semantic to begin with. In fact you're likely better off using custom tags since you're giving crawlers an extra hint about your content structure. 
+
+Again, you should favour standard semantic HTML tags as much as possible; custom tags should only be used when other tags don't quite fit and you would normally go with a `<div>` by default.
+
+As for `aria` props: they're standard HTML attributes. They will work exactly the same way with custom tags (there's no reason they wouldn't!). All a11y hints will be followed by the browser as expected.
+
 ## Fixing the Tailwind website example
 
 <p
