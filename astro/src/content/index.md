@@ -149,7 +149,6 @@ You don’t need to rewrite everything overnight. Even small steps like replacin
 - [Just use a button](https://gomakethings.com/just-use-a-button/) - Don't use a `<div>` to do a `<button>`'s job.
 - [PicoCSS](https://picocss.com/) – a CSS framework that embraces semantic, class-less markup.
 
-
 ## Looking Ahead
 
 HTML3000 isn’t a framework, library, or package you install. It’s a set of practices that rediscover the expressive power of HTML and CSS – tools that already run everywhere. It’s about writing code for the web that’s semantic, declarative, and future-proof.
@@ -157,3 +156,9 @@ HTML3000 isn’t a framework, library, or package you install. It’s a set of p
 If the early web was about documents and the last decade was about JavaScript-driven UIs, perhaps the next step is recognizing that the simplest building blocks – HTML and CSS – already take us surprisingly far.
 
 HTML3000 isn’t just a practice. It’s a promise: **no more meaningless markup.** Because the future of the web shouldn’t be meaningless.
+
+## This is too long and I prefer watching a video
+
+Fine, here's an HTML3000 talk I gave at [TorontoJS](https://torontojs.com/) November 2025!
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/SefuQ6kMXwc?start=638" title="TorontoJS November 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
