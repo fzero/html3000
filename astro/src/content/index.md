@@ -146,6 +146,12 @@ Using semantic, declarative markup makes code easier to read, reason about and m
 
 You don’t need to rewrite everything overnight. Even small steps like replacing anonymous `<div>`s with meaningful custom tags can dramatically improve readability. You can go further by experimenting with attribute selectors or phasing out class-heavy patterns where they don’t serve you.
 
+<p class="codepen" data-height="400" data-pen-title="HTML3000: Half-assing it" data-default-tab="html,result" data-slug-hash="bNEdNbq" data-editable="true" data-user="fzero" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/fzero/pen/bNEdNbq">
+  HTML3000: Half-assing it</a> by Fabio Neves (<a href="https://codepen.io/fzero">@fzero</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+
 ## Further Reading
 
 - [CSS Classes Considered Harmful](https://www.keithcirkel.co.uk/css-classes-considered-harmful) – the article that sparked much of this thinking.
