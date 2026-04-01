@@ -19,9 +19,9 @@ The irony is that React developers already know this. They write `<Panel>`, `<Bu
 
 It most definitely isn't. In fact, semantic HTML is more important than ever.
 
-## HTML in 2025: Underused and Undervalued
+## HTML: Underused and Undervalued
 
-The truth is, HTML and CSS in 2025 are more powerful than many developers realize. Features like CSS nesting, attribute selectors, and custom elements give us expressive, declarative tools that work everywhere without JavaScript or build systems. Put together, these practices feel futuristic – like coding in the year 3000! – even though most of them have been around for years.
+The truth is, HTML and CSS in are more powerful than many developers realize. Features like CSS nesting, attribute selectors, and custom elements give us expressive, declarative tools that work everywhere without JavaScript or build systems. Put together, these practices feel futuristic – like coding in the year 3000! – even though most of them have been around for years.
 
 That’s why I call this approach **HTML3000**.
 
@@ -29,7 +29,7 @@ That’s why I call this approach **HTML3000**.
 
 At its core, HTML3000 is about leaning into semantics and writing HTML that describes _what_ an element is, not just _how it looks_. The key principles are:
 
-- **Use custom HTML tags extensively.** No `<div>` or `<span>`. If you feel you need these tags, take a step back and figure out what you actually mean. Existing semantic HTML tags should be considered first but the moment you need something new, build it!
+- **Use custom HTML tags extensively.** No `<div>` or `<span>` – use descriptive tags such as `<carousel>`, `<settings-panel>` and so on. If you feel the need to use a `<div>`, take a step back and figure out what you actually mean. Existing semantic HTML tags should be considered first but the moment you need something new, build it!
 
 - **Favor context and nesting over class soup.** Remember what the “C” in CSS stands for.
 
@@ -40,6 +40,14 @@ At its core, HTML3000 is about leaning into semantics and writing HTML that desc
 - **JavaScript comes last.** Focus on structure and styling before behavior.
 
 The goal isn’t to throw out modern tooling. HTML3000 plays nicely with ERB, Hotwire, Stimulus, HTMX, React, Vue, Phoenix LiveView, and more. It’s “just HTML” but written differently.
+
+## What about SEO and a11y?
+
+There's literally no change in SEO performance since `<div>` and `<span>` are not semantic to begin with. In fact you're likely better off using custom tags since you're giving crawlers an extra hint about your content structure. 
+
+Again, you should favour standard semantic HTML tags as much as possible; custom tags should only be used when other tags don't quite fit and you would normally go with a `<div>` by default.
+
+As for `aria` props: they're standard HTML attributes. They will work exactly the same way with custom tags (there's no reason they wouldn't!). All a11y hints will be followed by the browser as expected.
 
 ## Wait, Don't I Need Javascript To Do That?
 
@@ -54,14 +62,6 @@ Javascript is only needed if you're implementing interactive behaviours, as usua
 Rest assured these are two separate features: custom HTML tags don't need any Javascript to work. You can simply add them to your code and apply CSS defitions as you would for any other HTML tag.
 
 That's how we're getting rid of `<span>` and `<div>` in favour of fully semantic tags to describe applications UIs.
-
-## What about SEO and a11y?
-
-There's literally no change when it comes to SEO since `<div>` and `<span>` are not semantic to begin with. In fact you're likely better off using custom tags since you're giving crawlers an extra hint about your content structure. 
-
-Again, you should favour standard semantic HTML tags as much as possible; custom tags should only be used when other tags don't quite fit and you would normally go with a `<div>` by default.
-
-As for `aria` props: they're standard HTML attributes. They will work exactly the same way with custom tags (there's no reason they wouldn't!). All a11y hints will be followed by the browser as expected.
 
 ## Fixing the Tailwind website example
 
@@ -93,10 +93,6 @@ As for `aria` props: they're standard HTML attributes. They will work exactly th
     <a href="https://codepen.io">CodePen</a>.</span
   >
 </p>
-<script
-  async
-  src="https://public.codepenassets.com/embed/index.js"
-></script>
 
 ## A javascript-free badge component
 
@@ -169,4 +165,4 @@ HTML3000 isn’t just a practice. It’s a promise: **no more meaningless markup
 
 Fine, here's an HTML3000 talk I gave at [TorontoJS](https://torontojs.com/) November 2025!
 
-<iframe width="100%" height="500" src="https://www.youtube.com/embed/SefuQ6kMXwc?start=638" title="TorontoJS November 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe loading="lazy" style="width: 100%; aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/SefuQ6kMXwc?start=638" title="TorontoJS November 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
